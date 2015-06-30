@@ -1,5 +1,6 @@
 My List
 =======
+[Cloned from](https://github.com/llopez/)
 My List is a simple *Backbone.js* application. It was made with the only purpose of learning.
   
 Libs
