@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My List</title>
+    <style>
+      input#title{ width: 150px; }
+      ul input{ width: 150px; }
+      ul li input{ display: none; }
+      ul li.editable input{ display: inline; }      
+      ul li.editable span{ display: none; }
+    </style>
+  </head>
+  <body>
+    <div id='app'>
+      <h1>My List</h1>
+      <input type="text" placeholder="Insert text and press enter" id="title">
+      <ul>
+      </ul>
+    </div>
+
+    <script type="text/html" id="item-template">
+      <span>
+        <%= title %> 
+        &nbsp; 
+        <button>Remove</button>
+      </span> 
+      <input type='text' value="<%= title %>">
+    </script>
+
+    <script src="jquery.js"></script>
+    <script src="underscore.js"></script>
+    <script src="backbone.js"></script>
+    <script src="backbone.localStorage.js"></script>
+    <script src="application.js"></script>
+  </body>
+</html>
